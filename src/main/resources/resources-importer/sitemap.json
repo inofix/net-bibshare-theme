@@ -1,0 +1,26 @@
+{
+    "layoutTemplateId": "2_columns_iii",
+    "themeId": "netbibsharetheme_WAR_netbibsharetheme",
+    "publicPages": [
+        {
+            "columns": [
+                [
+                    {
+                        "portletId": "com_liferay_social_activities_web_portlet_SocialActivitiesPortlet"
+                    }                                    
+                ], 
+                [
+                    {
+                        "portletId": "ch_inofix_referencemanager_web_internal_portlet_YourBibliographiesPortlet"
+                    },
+                    {
+                        "portletId": "ch_inofix_referencemanager_web_internal_portlet_PopularBibliographiesPortlet"  
+                    }
+                ]
+            ],
+            "friendlyURL": "/welcome",
+            "name": "Welcome",
+            "title": "Welcome"
+        }
+    ]
+}
