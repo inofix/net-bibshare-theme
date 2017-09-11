@@ -1,6 +1,111 @@
+/** 
+    _custom.scss: main config of the bibshare-theme
+
+    Created:    2017-09-11 19:24 by Christian Berndt
+    Modified:   2017-09-11 19:24 by Christian Berndt
+    Version:    0.1.0
+*/
 /* These inject tags are used for dynamically creating imports for themelet styles, you can place them where ever you like in this file. */
 
 /* inject:imports */
 /* endinject */
 
 /* This file allows you to override default styles in one central location for easier upgrade and maintenance. */
+
+@import "core_portlets";
+@import "navigation";
+@import "variables";
+
+a {
+    &:active,
+    &:focus {
+        outline-color: transparent;
+    }
+}
+
+.alert {
+    padding: 10px 15px;  
+    
+    &.taglib-portal-message {
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+    } 
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px; 
+}
+
+.btn {
+    font-weight: 600; 
+}
+
+.button-holder {
+    .btn-lg {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+}
+
+.control-menu {
+    .toggle-controls {
+        &.visible-xs {
+            display: inline-block ! important;
+        }
+    }
+}
+
+#footer {
+    
+    background: #fff;
+    border-top: 1px solid $color-lightgray;
+    color: #333;
+    text-align: center; 
+    vertical-align: middle;
+    
+    a {
+        color: #333;
+        
+        &:active,
+        &:focus,
+        &:hover {
+            color: darken(#333, 20%);
+            text-decoration: none; 
+        }
+    }
+    
+    .col-sm-4 {
+        padding: 15px 0;
+    }
+    
+    .container {
+        padding: 20px 15px;
+    }
+    
+    #sign-in,
+    #sign-out {
+        display: block;
+        padding: 0 7.5px;        
+    }
+}
+
+h2.portlet-title-text {
+    display: none;
+}
+
+.signed-in {
+    
+    #navigation {
+        margin-top: 64px;
+    }
+}
+
+#wrapper {
+    
+    margin-top: 0 !important;
+    
+}
+
+@import "responsive";
+
