@@ -2,8 +2,8 @@
     navigation.ftl: header navigation.
     
     Created:    2017-09-11 19:14 by Christian Berndt
-    Modified:   2017-09-15 00:34 by Christian Berndt
-    Version:    1.0.3
+    Modified:   2017-09-15 00:58 by Christian Berndt
+    Version:    1.0.4
 -->
 
 <#assign home_url = htmlUtil.escape(theme_display.getURLHome()) />
@@ -110,18 +110,6 @@
                               
             </#list>
 
-            <li>
-                <#assign VOID = freeMarkerPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone") />        
-                                    
-                <@liferay_portlet["runtime"]
-                    defaultPreferences="${freeMarkerPortletPreferences}"
-                    portletProviderAction=portletProviderAction.VIEW
-                    instanceId="NAVIGATION_LANGUAGE"
-                    portletName="com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet" />
-        
-                <#assign VOID = freeMarkerPortletPreferences.reset() />
-            </li>
-            
             <#if !is_signed_in >
                 <li>
                     <a class="btn btn-default btn-sign-in" data-redirect="${is_login_redirect_required?string}" href="${sign_in_url}" id="sign-in" rel="nofollow">
@@ -136,6 +124,18 @@
                     <a class="btn btn-default btn-sign-out" href="${sign_out_url}" id="sign-out" rel="nofollow" title="<@liferay.language key="sign-out" />"><@liferay.language key="sign-out" /></a>
                 </li>
             </#if>
+            
+            <li>
+                <#assign VOID = freeMarkerPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone") />        
+                                    
+                <@liferay_portlet["runtime"]
+                    defaultPreferences="${freeMarkerPortletPreferences}"
+                    portletProviderAction=portletProviderAction.VIEW
+                    instanceId="NAVIGATION_LANGUAGE"
+                    portletName="com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet" />
+        
+                <#assign VOID = freeMarkerPortletPreferences.reset() />
+            </li>           
 
         </ul>
     </div>
