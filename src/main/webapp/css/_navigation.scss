@@ -2,8 +2,8 @@
     _navigation.scss: bibshare theme navigation 
 
     Created:    2017-09-11 19:25 by Christian Berndt
-    Modified:   2017-09-14 19:07 by Christian Berndt
-    Version:    1.0.1
+    Modified:   2017-09-15 00:33 by Christian Berndt
+    Version:    1.0.2
 */
 
 @import "variables";
@@ -16,6 +16,21 @@
     font-size: 16px;
     margin-bottom: 0;
     text-align: center;
+    
+    .btn {
+    
+        border-width: 0;
+        font-weight: 600;
+        padding: 15px 5px;
+        letter-spacing: normal;
+        text-transform: none;
+        
+        &.btn-success {
+            border-radius: 0;
+            color: white;
+        }
+        
+    }
     
     .container {
     
@@ -68,6 +83,10 @@
                 background-color: $color-lightgray;
             }
         }
+    }
+    
+    .lexicon-icon-search {
+        margin-top: 6px;
     }
     
     .navbar-brand {

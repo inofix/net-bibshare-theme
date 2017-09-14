@@ -2,8 +2,8 @@
     navigation.ftl: header navigation.
     
     Created:    2017-09-11 19:14 by Christian Berndt
-    Modified:   2017-09-14 23:16 by Christian Berndt
-    Version:    1.0.2
+    Modified:   2017-09-15 00:34 by Christian Berndt
+    Version:    1.0.3
 -->
 
 <#assign home_url = htmlUtil.escape(theme_display.getURLHome()) />
@@ -121,6 +121,21 @@
         
                 <#assign VOID = freeMarkerPortletPreferences.reset() />
             </li>
+            
+            <#if !is_signed_in >
+                <li>
+                    <a class="btn btn-default btn-sign-in" data-redirect="${is_login_redirect_required?string}" href="${sign_in_url}" id="sign-in" rel="nofollow">
+                        <@liferay.language key="sign-in" />
+                    </a>
+                    <a class="btn btn-success btn-sign-up" data-redirect="${is_login_redirect_required?string}" href="${sign_in_url}" id="sign-in" rel="nofollow">
+                        <@liferay.language key="sign-up" />
+                    </a>
+                </li>
+            <#elseif sign_out_url??> <#-- sign_out_url is not available in impersonate mode -->
+                <li>
+                    <a class="btn btn-default btn-sign-out" href="${sign_out_url}" id="sign-out" rel="nofollow" title="<@liferay.language key="sign-out" />"><@liferay.language key="sign-out" /></a>
+                </li>
+            </#if>
 
         </ul>
     </div>
