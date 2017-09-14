@@ -21,6 +21,69 @@
             "friendlyURL": "/welcome",
             "name": "Welcome",
             "title": "Welcome"
+        },
+        {
+            "columns": [
+                [
+                    {
+                        "portletId": "ch_inofix_referencemanager_web_internal_portlet_BibliographyManagerPortlet"
+                    }                                    
+                ], 
+                [
+                    {
+                        "portletId": "ch_inofix_referencemanager_web_internal_portlet_YourBibliographiesPortlet"
+                    },
+                    {
+                        "portletId": "ch_inofix_referencemanager_web_internal_portlet_PopularBibliographiesPortlet"  
+                    }
+                ]
+            ],
+            "friendlyURL": "/bibliographies",
+            "hidden" : true,
+            "name": "Bibliographies",
+            "title": "Bibliographies"
+        },
+        {
+            "columns": [
+                [
+                    {
+                        "portletId": "ch_inofix_referencemanager_web_internal_portlet_ReferenceManagerPortlet"
+                    }                                    
+                ], 
+                [
+                    {
+                        "portletId": "ch_inofix_referencemanager_web_internal_portlet_YourBibliographiesPortlet"
+                    },
+                    {
+                        "portletId": "ch_inofix_referencemanager_web_internal_portlet_PopularBibliographiesPortlet"  
+                    }
+                ]
+            ],
+            "friendlyURL": "/references",
+            "hidden" : true,
+            "name": "References",
+            "title": "References"
+        },
+        {
+            "columns": [
+                [
+                    {
+                        "portletId": "referencemanagerjsf_WAR_chinofixreferencemanagerjsf"
+                    }                                    
+                ], 
+                [
+                    {
+                        "portletId": "ch_inofix_referencemanager_web_internal_portlet_YourBibliographiesPortlet"
+                    },
+                    {
+                        "portletId": "ch_inofix_referencemanager_web_internal_portlet_PopularBibliographiesPortlet"  
+                    }
+                ]
+            ],
+            "friendlyURL": "/edit",
+            "hidden" : true,
+            "name": "Edit",
+            "title": "Edit"
         }
     ]
 }
