@@ -2,8 +2,8 @@
     _navigation.scss: bibshare theme navigation 
 
     Created:    2017-09-11 19:25 by Christian Berndt
-    Modified:   2017-09-11 19:25 by Christian Berndt
-    Version:    1.0.0
+    Modified:   2017-09-14 19:07 by Christian Berndt
+    Version:    1.0.1
 */
 
 @import "variables";
@@ -147,7 +147,7 @@
                     cursor: pointer;    
                     display: inline-block;                            
                     padding-bottom: 25px;
-                    padding-top: 28px; 
+                    padding-top: 27px; 
                 }
             }
             
@@ -199,4 +199,47 @@
             }
         }
     }
+    
+    .portlet-search {
+    
+        display: inline;
+        
+        .portlet-topper {
+            margin-top: -20px;
+        }
+        
+        .portlet {
+        
+            display: inline;
+            
+            .portlet-content {
+            
+                display: inline;
+                
+                .portlet-content-container {
+                    
+                    display: inline;
+                    
+                    .portlet-body {
+                    
+                        display: inline;
+                        
+                        form {
+                        
+                            display: inline;
+                            
+                            fieldset {
+                                display: inline;     
+
+                                &.input-container {
+                                    padding-top: 16px;
+                                }                         
+                            }
+                        }                        
+                    }                    
+                }
+            }           
+        }        
+    }
+    
 }
