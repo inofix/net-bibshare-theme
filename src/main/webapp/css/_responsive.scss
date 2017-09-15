@@ -2,8 +2,8 @@
     _responsive.scss: responsive configuration of the bibshare-theme 
 
     Created:    2017-09-11 19:44 by Christian Berndt
-    Modified:   2017-09-15 00:33 by Christian Berndt
-    Version:    0.1.1
+    Modified:   2017-09-15 16:50 by Christian Berndt
+    Version:    0.1.2
 */
 
 /* Small devices (tablets, 768px and up) */
@@ -54,16 +54,29 @@
             padding-left: 15px; 
             padding-right: 15px;         
         }
+        
+        .form-group-inline {
+            width: 180px;
+        }
     
         .navbar-brand {
         
-            padding-top: 12px; 
-            padding-bottom: 12px;
+            padding-top: 16px; 
+            padding-bottom: 16px;
             
             > img {
                 display: inline-block;
                 height: 50px;
                 margin-right: 10px         
+            } 
+            
+            .icon-wrapper {
+                            
+                .icon {
+                    color: white;
+                    font-size: 30px;
+                    line-height: 1;
+                }
             }  
         }
         
@@ -83,6 +96,12 @@
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+    
+    #navigation {
+        .form-group-inline {
+            width: 240px;
+        }    
+    }
     
 }
 

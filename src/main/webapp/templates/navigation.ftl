@@ -2,12 +2,13 @@
     navigation.ftl: header navigation.
     
     Created:    2017-09-11 19:14 by Christian Berndt
-    Modified:   2017-09-15 00:58 by Christian Berndt
-    Version:    1.0.4
+    Modified:   2017-09-15 16:50 by Christian Berndt
+    Version:    1.0.5
 -->
 
 <#assign home_url = htmlUtil.escape(theme_display.getURLHome()) />
 <#assign is_impersonated = themeDisplay.isImpersonated() />
+<#assign logo_icon = "icon-share-alt">
 
 <#if !home_url?has_content>
     <#assign home_url = company_url />
@@ -29,11 +30,17 @@
             </button>
            
             <a class="navbar-brand ${logo_css_class}" href="${home_url}" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">
-                <img alt="${logo_description}" src="${company_logo}?v.1" />
-            
+                <#if logo_icon?has_content>
+                    <span class="icon-wrapper">
+                        <span class="icon ${logo_icon}"></span>
+                    </span>
+                <#else>
+                    <img alt="${logo_description}" src="${company_logo}?v.1" />
+                </#if>
                 <#if show_site_name>
                     <span class="brand-name site-name" title="<@liferay.language_format arguments="${company_name}" key="go-to-x" />">
                         ${company_name}
+                        <span class="muted">Beta</span>
                     </span>
                 </#if>
             </a>

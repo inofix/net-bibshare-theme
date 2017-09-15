@@ -2,8 +2,8 @@
     _core_portlets.scss: adjust Liferay's core portlets for the bibshare-theme
 
     Created:    2017-09-11 21:26 by Christian Berndt
-    Modified:   2017-09-11 21:26 by Christian Berndt
-    Version:    1.0.0
+    Modified:   2017-09-15 11:41 by Christian Berndt
+    Version:    1.0.1
 */
 
 .controls-hidden {
@@ -161,5 +161,12 @@
     
     .portlet-icon-back .icon-angle-left {
         display: none; 
+    }
+}
+
+.taglib-asset-tags-summary {
+    .badge-sm {
+        font-size: 12px;
+        padding: 3px 7px; /* bs3 default-badge */
     }
 }
