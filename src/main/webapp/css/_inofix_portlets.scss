@@ -7,7 +7,46 @@
 */
 
 .portlet-bibliography-manager {
+    
     margin-bottom: 20px;
+    
+    .table {
+    
+        > tbody tr td:first-child {
+        
+            padding-bottom: 20px;
+            padding-left: 0; 
+            padding-top: 15px;
+            
+            a {
+                &.bibliography-title {
+                    font-size: 20px;
+                    font-weight: 600;                
+                }
+            }
+            
+            .description {
+                margin: 5px 0 10px;
+            }
+            
+            .taglib-ratings {
+            
+                font-size: 12px;
+                margin-top: 15px;
+                
+                .liferay-rating-score {
+                    .icon-star {
+                        color: gold; 
+                    }
+                }                     
+            }
+        }
+        
+        > thead {
+            display: none;
+        }
+    }
+    
 }
 
 .portlet-reference-editor {
