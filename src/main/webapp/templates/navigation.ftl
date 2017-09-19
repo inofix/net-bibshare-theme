@@ -3,7 +3,7 @@
     
     Created:    2017-09-11 19:14 by Christian Berndt
     Modified:   2017-09-15 16:50 by Christian Berndt
-    Version:    1.0.5
+    Version:    1.0.6
 -->
 
 <#assign home_url = htmlUtil.escape(theme_display.getURLHome()) />
@@ -133,6 +133,7 @@
             </#if>
             
             <li>
+                <#assign VOID = freeMarkerPortletPreferences.setValue("displayStyle", "ddmTemplate_POPOVER-7.0.3") />        
                 <#assign VOID = freeMarkerPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone") />        
                                     
                 <@liferay_portlet["runtime"]
