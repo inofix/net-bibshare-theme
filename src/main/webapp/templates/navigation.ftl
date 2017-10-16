@@ -2,8 +2,8 @@
     navigation.ftl: header navigation.
     
     Created:    2017-09-11 19:14 by Christian Berndt
-    Modified:   2017-09-15 16:50 by Christian Berndt
-    Version:    1.0.6
+    Modified:   2017-10-16 23:02 by Christian Berndt
+    Version:    1.0.7
 -->
 
 <#assign home_url = htmlUtil.escape(theme_display.getURLHome()) />
@@ -129,6 +129,15 @@
             <#elseif sign_out_url??> <#-- sign_out_url is not available in impersonate mode -->
                 <li>
                     <a class="btn btn-default btn-sign-out" href="${sign_out_url}" id="sign-out" rel="nofollow" title="<@liferay.language key="sign-out" />"><@liferay.language key="sign-out" /></a>
+                </li>
+            </#if>
+            
+            <#if user.hasPublicLayouts()>
+                <li>
+                    <a class="btn btn-info btn-my-account" href="${user.getDisplayURL(theme_display, false)}">
+                        <span class="icon-home hidden-xs hidden-md hidden-lg"></span>
+                        <span class="hidden-sm"><@liferay.language key="my-account" /></span>
+                    </a>
                 </li>
             </#if>
             
