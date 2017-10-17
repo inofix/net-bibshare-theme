@@ -127,12 +127,12 @@
                     </a>
                 </li>
             <#else>
-                <#if sign_out_url??> <#-- sign_out_url is not available in impersonate mode -->>
+                <#if sign_out_url??> <#-- sign_out_url is not available in impersonate mode -->
                     <li>
                         <a class="btn btn-default btn-sign-out" href="${sign_out_url}" id="sign-out" rel="nofollow" title="<@liferay.language key="sign-out" />"><@liferay.language key="sign-out" /></a>
                     </li>
                 </#if>
-                <#if user.hasPublicLayouts()>
+                <#if user.hasPublicLayouts() >
                     <li>
                         <a class="btn btn-info btn-my-account" href="${user.getDisplayURL(theme_display, false)}">
                             <span class="icon-home hidden-xs hidden-md hidden-lg"></span>
@@ -141,8 +141,6 @@
                     </li>
                 </#if>
             </#if>
-            
-
             
             <li>
                 <#assign VOID = freeMarkerPortletPreferences.setValue("displayStyle", "ddmTemplate_POPOVER-7.0.3") />        
