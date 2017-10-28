@@ -2,13 +2,27 @@
     _inofix_portlets.scss: configure Inofix' portlets for the bibshare-theme
 
     Created:    2017-09-13 00:03 by Christian Berndt
-    Modified:   2017-10-12 18:22 by Christian Berndt
-    Version:    1.0.4
+    Modified:   2017-10-28 21:53 by Christian Berndt
+    Version:    1.0.5
 */
 
 .portlet-bibliography-manager {
     
     margin-bottom: 20px;
+    
+    .bibliography-head {
+    
+        .btn {
+        
+            .icon-download {
+            
+                font-size: 16px;
+                line-height: 20px;
+                margin-right: 3px;
+                vertical-align: middle;
+            }
+        }
+    }
     
     .table {
     
