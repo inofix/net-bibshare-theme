@@ -3,7 +3,7 @@
 
     Created:    2017-09-11 19:24 by Christian Berndt
     Modified:   2017-10-29 16:25 by Christian Berndt
-    Version:    0.1.8
+    Version:    0.1.9
 */
 /* These inject tags are used for dynamically creating imports for themelet styles, you can place them where ever you like in this file. */
 
@@ -32,6 +32,12 @@ a {
         border-top-right-radius: 0;
         border-top-left-radius: 0;
     } 
+}
+
+.alert-dismissable {
+    .close {
+        right: 0; 
+    }
 }
 
 body {
