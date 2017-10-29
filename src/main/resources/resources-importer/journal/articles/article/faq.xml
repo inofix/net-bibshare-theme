@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<root available-locales="en_US" default-locale="en_US">
+    <dynamic-element name="section" type="text" index-type="keyword" instance-id="whxo">
+        <dynamic-element name="text" instance-id="tszt" type="text_box" index-type="text">
+            <dynamic-content language-id="en_US"><![CDATA[You may upload or clone entire bibliographies, manually add single references or select references already available on the platform.]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="en_US"><![CDATA[How does the reference sharing at bibshare work?]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="showToc" type="boolean" index-type="keyword" instance-id="rqok">
+        <dynamic-content language-id="en_US"><![CDATA[true]]></dynamic-content>
+    </dynamic-element>
+</root>

@@ -2,8 +2,8 @@
     _navigation.scss: bibshare theme navigation 
 
     Created:    2017-09-11 19:25 by Christian Berndt
-    Modified:   2017-10-16 23:06 by Christian Berndt
-    Version:    1.0.4
+    Modified:   2017-10-29 13:16 by Christian Berndt
+    Version:    1.0.6
 */
 
 @import "variables";
@@ -34,11 +34,20 @@
             }
         }
         
+        &.btn-sign-in {
+            &:hover {
+                background-color: #e6e6e6; /* bs3 btn-default:hover default */                       
+            }
+        }
+        
         &.btn-success {
             border-radius: 0;
             color: white;
-        }
-        
+            
+            &:hover {
+                background-color: #449d44; /* bs3 btn-success:hover default */           
+            }
+        }     
     }
     
     .container {
