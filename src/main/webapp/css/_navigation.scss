@@ -2,8 +2,8 @@
     _navigation.scss: bibshare theme navigation 
 
     Created:    2017-09-11 19:25 by Christian Berndt
-    Modified:   2017-10-29 13:12 by Christian Berndt
-    Version:    1.0.5
+    Modified:   2017-10-29 13:16 by Christian Berndt
+    Version:    1.0.6
 */
 
 @import "variables";
@@ -31,6 +31,12 @@
             
             &:hover {
                 background-color: #31b0d5;
+            }
+        }
+        
+        &.btn-sign-in {
+            &:hover {
+                background-color: #e6e6e6; /* bs3 btn-default:hover default */                       
             }
         }
         
