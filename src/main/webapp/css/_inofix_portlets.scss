@@ -2,8 +2,8 @@
     _inofix_portlets.scss: configure Inofix' portlets for the bibshare-theme
 
     Created:    2017-09-13 00:03 by Christian Berndt
-    Modified:   2017-10-29 13:03 by Christian Berndt
-    Version:    1.0.7
+    Modified:   2017-11-04 16:03 by Christian Berndt
+    Version:    1.0.8
 */
 
 .portlet-bibliography-manager {
@@ -40,21 +40,21 @@
             
                 td:first-child {
                 
-                    padding-bottom: 30px;
                     padding-left: 0; 
-                    padding-top: 20px;
                     
                     a {
                         &.bibliography-title {
                             display: block;
                             font-size: 20px;
                             font-weight: 600; 
-                            margin-bottom: 5px;             
+                            margin-bottom: 5px;
+                            margin-top: 10px;           
                         }
                     }
                     
                     .compiled-by {
-                        margin-bottom: 5px;
+                        font-size: 12px;
+                        margin-bottom: 10px;
                     }
                                                                
                     .description {
@@ -64,6 +64,7 @@
                     .taglib-ratings {
                     
                         font-size: 12px;
+                        margin-bottom: 20px;
                         margin-top: 15px;
                         
                         .liferay-rating-score {
