@@ -1,13 +1,26 @@
 <?xml version="1.0"?>
 
 <root available-locales="en_US" default-locale="en_US">
-    <dynamic-element name="section" type="text" index-type="keyword" instance-id="whxo">
-        <dynamic-element name="text" instance-id="tszt" type="text_box" index-type="text">
-            <dynamic-content language-id="en_US"><![CDATA[You may upload or clone entire bibliographies, manually add single references or select references already available on the platform.]]></dynamic-content>
+    <dynamic-element name="section" type="text"
+        index-type="keyword" instance-id="whxo">
+        <dynamic-element name="text" instance-id="tszt"
+            type="text_box" index-type="text">
+            <dynamic-content language-id="en_US"><![CDATA[You may upload entire bibliographies or clone bibliographies already present on BibShare.
+
+You can can augment your bibliography either by using references already present on the BibShare platform or by adding new references.]]></dynamic-content>
         </dynamic-element>
-        <dynamic-content language-id="en_US"><![CDATA[How does the reference sharing at bibshare work?]]></dynamic-content>
+        <dynamic-content language-id="en_US"><![CDATA[How does BibShare work?]]></dynamic-content>
     </dynamic-element>
-    <dynamic-element name="showToc" type="boolean" index-type="keyword" instance-id="rqok">
+    <dynamic-element name="section" type="text"
+        index-type="keyword" instance-id="phnu">
+        <dynamic-element name="text" instance-id="knxn"
+            type="text_box" index-type="text">
+            <dynamic-content language-id="en_US"><![CDATA[If you use a reference in multiple bibliographies references with the same BibTeX key or with the same bibref-id are updated automatically across all your bibliographies.]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="en_US"><![CDATA[What happens, if I use a reference in multiple bibliograpies?]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="showToc" type="boolean"
+        index-type="keyword" instance-id="rqok">
         <dynamic-content language-id="en_US"><![CDATA[true]]></dynamic-content>
     </dynamic-element>
 </root>
